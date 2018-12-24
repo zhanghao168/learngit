@@ -7,10 +7,8 @@ function visibilityFilter(state = SHOW_ALL, action) {
     switch (action.type) {
     case SET_VISIBILITY_FILTER:
         return action.filter;
-        break;
     default:
         return state;
-        break;
     }
 }
 
@@ -23,7 +21,6 @@ function todos(state = [], action) {
                 completed: false
             }
         ];
-        break;
 
     case TOGGLE_TODO:
         return state.map((todo, index) => {
@@ -36,7 +33,6 @@ function todos(state = [], action) {
         });
     default:
         return state;
-        break;
     }
 }
 
